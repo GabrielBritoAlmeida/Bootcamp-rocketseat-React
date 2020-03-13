@@ -1,68 +1,65 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Bootcamp-Gobaber
 
-## Available Scripts
+Projeto em React, para construção de um sistema de agendamento.
 
-In the project directory, you can run:
+> Mais detalhes do projeto passo a passo logo abaixo:
 
-### `yarn start`
+# ---- Pacotes dependencias de desenvolvimento ------------------
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Ajustando importação de arquivos src (~)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+> yarn add customize-cra react-app-rewired -D
 
-### `yarn test`
+> yarn add babel-plugin-root-import -D
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+--> Trocar em package.json para "start": "react-app-rewired start",
+"build": "react-app-rewired build",
+"test": "react-app-rewired test",
 
-### `yarn build`
+--> Criar arquivos jsconfig.json e "jsconfig.json"
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+--> reiniciar o servidor
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# ---------- Pacotes ------------------
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Eslint (Airbnb)
 
-### `yarn eject`
+> yarn add eslint
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Rotas
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> yarn add react-router-dom
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## History
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+> yarn add history
 
-## Learn More
+## Reactotron
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> yarn add reactotron-react-js
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Proptypes
 
-### Code Splitting
+> yarn add prop-types
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Styled Components
 
-### Analyzing the Bundle Size
+> yarn add styled-components
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Polished
 
-### Making a Progressive Web App
+> yarn add polished
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Unform (formulários)
 
-### Advanced Configuration
+> yarn add @rocketseat/unform
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Yup
 
-### Deployment
+> yarn add yup
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## Redux
 
-### `yarn build` fails to minify
+> yarn add redux redux-saga react-redux reactotron-redux reactotron-redux-saga imer
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+##
