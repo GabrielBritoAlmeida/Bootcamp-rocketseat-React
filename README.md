@@ -1,6 +1,6 @@
 ## Bootcamp-Gobaber
 
-Projeto em React, para construção de um sistema de agendamento.
+Projeto em React, para construção de um sistema para agendamento.
 
 > Mais detalhes do projeto passo a passo logo abaixo:
 
@@ -62,4 +62,11 @@ Projeto em React, para construção de um sistema de agendamento.
 
 > yarn add redux redux-saga react-redux reactotron-redux reactotron-redux-saga imer
 
-##
+## Axios
+
+> yarn add axios
+
+## Redux Persist
+
+> yarn add redux-persist
+# Sistema_Agendamento-React
