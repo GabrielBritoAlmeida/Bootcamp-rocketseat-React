@@ -69,4 +69,7 @@ Projeto em React, para construção de um sistema para agendamento.
 ## Redux Persist
 
 > yarn add redux-persist
-# Sistema_Agendamento-React
+
+## Toastify
+
+> yarn add react-toastify
