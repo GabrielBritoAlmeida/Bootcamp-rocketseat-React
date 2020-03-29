@@ -73,3 +73,17 @@ Projeto em React, para construção de um sistema para agendamento.
 ## Toastify
 
 > yarn add react-toastify
+
+## React Icons
+
+> yarn add react-icons
+
+## Scrollbar
+
+-> importar no Global Style (import 'react-perfect-scrollbar/dist/css/styles.css')
+
+> yarn add react-perfect-scrollbar
+
+## Date FNS
+
+> yarn add date-fns@next
