@@ -87,3 +87,7 @@ Projeto em React, para construção de um sistema para agendamento.
 ## Date FNS
 
 > yarn add date-fns@next
+
+## Date time zone
+
+> yarn add date-fns-tz

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { MdNotifications } from 'react-icons/md';
 import { parseISO, formatDistance } from 'date-fns';
 import pt from 'date-fns/locale/pt';
@@ -19,7 +19,7 @@ export default function Notifications() {
 
   useEffect(() => {
     async function loadNotification() {
-      const response = await api.get('/notications');
+      const response = await api.get('/notifications');
 
       // Adicinando infomação de tempo
       const data = response.data.map(notification => ({
@@ -41,9 +41,24 @@ export default function Notifications() {
     setVisible(!visible);
   }
 
+  async function handleMarkAsRead(id) {
+    await api.put(`/notifications/${id}`);
+
+    setNotifications(
+      notifications.map(notification =>
+        notification._id === id ? { ...notification, read: true } : notification
+      )
+    );
+  }
+
+  const hasUnread = useMemo(
+    () => !!notifications.find(notification => notification.read === false),
+    [notifications]
+  );
+
   return (
     <Container>
-      <Badge onClick={handleToggleVisible} hasUnread>
+      <Badge onClick={handleToggleVisible} hasUnread={hasUnread}>
         <MdNotifications color="#7159c1" size={20} />
       </Badge>
 
@@ -54,7 +69,14 @@ export default function Notifications() {
               <Notification key={notification._id} unread={!notification.read}>
                 <p>{notification.content}</p>
                 <time>{notification.timeDistance}</time>
-                <button type="button">Marcar como lida</button>
+                {!notification.read && (
+                  <button
+                    type="button"
+                    onClick={() => handleMarkAsRead(notification._id)}
+                  >
+                    Marcar como lida
+                  </button>
+                )}
               </Notification>
             );
           })}
